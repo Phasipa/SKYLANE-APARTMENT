@@ -1,4 +1,69 @@
 /* Reset CSS */
+.slides{
+    width: 100%;
+    position: relative;
+    }
+    .slides .slide{
+    display: none;
+    }
+    .slides .slide img{
+    width: 50%;
+    height: 20%;
+    margin-left: 25%;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    }
+    .slides .navigation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    }
+    .slides .navigation .prev, .slides .navigation .next{
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background: rgba(0,0,0,0.2);
+    user-select: none;
+    transition: 0.6s ease;
+    }
+    .slides .navigation .prev:hover, .slides .navigation .next:hover{
+    background: rgba(0,0,0,1);
+    }
+    @keyframes fade {
+    from{opacity: 0.3}
+    to {opacity: 1}
+    }
+    @media (max-width: 992px){
+    .slides .navigation .prev, .slides .navigation .next{
+    font-size: 18px;
+    padding: 13px;
+    }
+    }
+    @media (max-width: 768px){
+    .slides .navigation .prev, .slides .navigation .next{
+    font-size: 15px;
+    padding: 10px;
+    }
+    }
+    @media (max-width: 576px){
+    .slides .navigation .prev, .slides .navigation .next{
+    font-size: 12px;
+    padding: 7px;
+    }
+    }
+    @media (max-width: 360px){
+    .slides .navigation .prev, .slides .navigation .next{
+    font-size: 11px;
+    padding: 6px;
+    }
+    }
+
 * {
   margin: 0;
   padding: 0;
@@ -57,7 +122,7 @@ nav ul li a:hover {
   padding: 20px;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .sky-text {
@@ -141,11 +206,11 @@ input[type="checkbox"] {
 .sky {
 	display: flex;
 	background-color: #41d8fe;
-	border-radius: 20px;
-	padding: 20px 0;
+	border-radius: 15px;
+	padding: 15px 0;
 	justify-content: space-around;
 	align-items: center;
-	margin-bottom: 50px;
+	margin-bottom: 25px;
 }
 
 .sky-text {
