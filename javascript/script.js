@@ -1,6 +1,12 @@
 let slideIndex = 0;
 showSlides();
 
+var slideIndex = 1;
+	showSlides(slideIndex);
+	function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("carousel-item");
@@ -27,11 +33,4 @@ function nextSlide() {
 }
 
 function prevSlide() 
-// Select the button element
-var button = document.querySelector('.btn_getStarted');
 
-// Add a click event listener to the button
-button.addEventListener('click', function() {
-  // Do something when the button is clicked
-  alert('Button was clicked!');
-});
