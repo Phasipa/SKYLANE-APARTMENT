@@ -36,14 +36,12 @@
 	  <div class="center">
 	    <div class="form-login">
 		 <h3>Login</h3>
-		 <form action="">
+		 <form action="entry-login.php" method="post">
 		   <input class="input" type="text" name="username"
 			    placeholder="Username" />
 	         <input class="input" type="password" name="password"
 			    placeholder="Password" />
-			<button type="submit" onclick="myFunction()" class="btn_login" name="login" 
-			id="login"> Login </button>
-	 </button>
+			<button type="submit" class="btn_login" name="masuk" id="login"> Login </button>
 		 </form>
 		 <a href="registrasi1.html" class="link-registrasi">
                   Register Disini</a>
