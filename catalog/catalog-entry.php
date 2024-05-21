@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" href="../pict/" />
+  <link rel="icon" href="../pict/logo.png" />
   <link rel="stylesheet" href="../css/admin.css" />
   <link
 	href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
@@ -18,19 +18,19 @@
 	</div>
 	<ul class="nav-links">
 	   <li>
-		<a href="../admin.html" class="active">
+		<a href="../admin.php" class="active">
 		   <i class="bx bx-grid-alt"></i>
 		   <span class="links_name">Dashboard</span>
 		</a>
 	   </li>
 	   <li>
-		<a href="../categories/categories.html">
+		<a href="../catalog/catalog.php">
 		   <i class="bx bx-box"></i>
 		   <span class="links_name">Catalog</span>
 		</a>
 	   </li>
 	   <li>
-		<a href="../transaction/transaction.html">
+		<a href="../transaction/transaction.php">
 		   <i class="bx bx-list-ul"></i>
 		   <span class="links_name">transaction</span>
 		</a>
@@ -49,24 +49,26 @@
 		<i class="bx bx-menu sidebarBtn"></i>
 	  </div>
 	  <div class="profile-details">
-		<span class="admin_name">SKYLANE APARTEMENT Admin</span>
+		<span class="admin_name">SKYLANE APARTEMENT ADMIN</span>
 	  </div>
 	</nav>
 	<div class="home-content">
 	  <h3>Input Catalog</h3>
 	  <div class="form-login">
-		<form action="">
+	  <form action="catalog-proses.php" method="post" enctype="multipart/form-data">
 	  	   <label for="catalog">Catalog</label>
-			<input class="input" type="text" name="catalog"
-				id="catalog" placeholder="Catalog"/>
- 		   <label for="catalog">Price</label>
-			<input class="input" type="text" name="price"
-				id="price" placeholder="Price" />
+			<input class="input" type="text" name="catalog" id="catalog" placeholder="Catalog"/>
+
+			<label for="description">Description</label>
+			<input class="input" type="text" name="description" id="Description" placeholder="Description" />
+
+ 		   <label for="price">Price</label>
+			<input class="input" type="text" name="price" id="price" placeholder="price" />
+
 		   <label for="photo">Photo</label>
-			<input type="file" name="photo" id="photo"
-				style="margin-bottom: 20px" />
-		   <button type="submit" class="btn btn-simpan" 
-                       name="simpan">
+			<input type="file" name="photo" id="photo" style="margin-bottom: 20px" />
+
+		   <button type="submit" class="btn-simpan" name="simpan">
 					Simpan
 		   </button>
 		</form>

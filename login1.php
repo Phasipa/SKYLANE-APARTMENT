@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <title>Login</title>
-  <link rel="icon" href="pict/" />
+  <link rel="icon" href="pict/logo.png" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,7 +26,7 @@
 	       <i class="fas fa-bars"></i>
 	    </label>
 	    <ul>
-		<li><a href="halaman utama.html">Home</a></li>
+		<li><a href="halaman utama.php">Home</a></li>
 		<li><a href="#">Catalog</a></li>
 
 	    </ul>
@@ -36,15 +36,14 @@
 	  <div class="center">
 	    <div class="form-login">
 		 <h3>Login</h3>
-		 <form action="entry-login.php" method="post">
-		   <input class="input" type="text" name="username"
-			    placeholder="Username" />
-	         <input class="input" type="password" name="password"
-			    placeholder="Password" />
-			<button type="submit" class="btn_login" name="masuk" id="login"> Login </button>
+		 <form action="login-proses.php" method="post">
+		   <input class="input" type="text" name="username" id="username" placeholder="Username" />
+	         <input class="input" type="password" name="password" id="password" placeholder="Password" />
+			<button type="submit" class="btn_login" name="login" id="login"> Login </button>
 		 </form>
-		 <a href="registrasi1.html" class="link-registrasi">
-                  Register Disini</a>
+		 <a href="registrasi1.php" class="link-registrasi">
+                  Registrasi Disini
+		</a>
 	    </div>
 	  </div>
 	</main>

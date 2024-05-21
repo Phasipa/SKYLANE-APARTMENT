@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<link rel="icon" href="pict/" />
+	<link rel="icon" href="pict/logo.png" />
 	<title>Home</title>
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />	
@@ -25,7 +25,7 @@
 	    <ul>
 		<li><a href="#">Home</a></li>
 		<li><a href="#">Catalog</a></li>
-		<li><a href="login1.html" class="btn_login">Login</a></li>
+		<li><a href="login1.php" class="btn_login">Login</a></li>
           </ul>
 	  </nav>
 	</header>
