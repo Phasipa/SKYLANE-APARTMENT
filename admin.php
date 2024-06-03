@@ -20,7 +20,7 @@
 <body>
   <div class="sidebar">
      <div class="logo-details">
-	   <i class="bx bx-catalog"></i>
+	   <img src="pict/logo.png" alt="" width="50px"/>
 	   <span class="logo_name">SKYLANE APARTEMENT</span>
      </div>
 	<ul class="nav-links">

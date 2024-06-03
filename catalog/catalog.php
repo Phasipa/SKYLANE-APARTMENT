@@ -15,7 +15,7 @@ if ($_SESSION['username'] == null) {
 	<!-- Boxicons CDN Link -->
 	<link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>SKYLANE APARTEMENT ADMIN| catalog</title>
+	<title>SKYLANE APARTEMENT ADMIN| Catalog</title>
 </head>
 
 <body>
@@ -34,7 +34,7 @@ if ($_SESSION['username'] == null) {
 			<li>
 				<a href="../catalog/catalog.php">
 					<i class="bx bx-box"></i>
-					<span class="links_name">catalog</span>
+					<span class="links_name">Catalog</span>
 				</a>
 			</li>
 			<li>
@@ -69,7 +69,7 @@ if ($_SESSION['username'] == null) {
 				<thead>
 					<tr>
 						<th scope="col" style="width: 20%">Photo</th>
-						<th>catalog</th>
+						<th>Catalog</th>
 						<th scope="col" style="width: 30%">Description</th>
 						<th scope="col" style="width: 15%">Price</th>
 						<th>Action</th>
